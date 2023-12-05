@@ -1,3 +1,5 @@
+import css from './Statistics.module.css';
+
 export default function Statistics({
   good,
   neutral,
@@ -6,30 +8,31 @@ export default function Statistics({
   positivePercentage,
 }) {
   return (
-    <ul>
-      <li>
-        <p>
-          Good: <span>{good}</span>
+    <ul className={css.statisticsList}>
+      <li className={css.statisticsItem}>
+        <p className={css.statisticsText}>
+          Good: <span className={css.statisticsVal}>{good}</span>
         </p>
       </li>
-      <li>
-        <p>
-          Neutral: <span>{neutral}</span>
+      <li className={css.statisticsItem}>
+        <p className={css.statisticsText}>
+          Neutral: <span className={css.statisticsVal}>{neutral}</span>
         </p>
       </li>
-      <li>
-        <p>
-          Bad: <span>{bad}</span>
+      <li className={css.statisticsItem}>
+        <p className={css.statisticsText}>
+          Bad: <span className={css.statisticsVal}>{bad}</span>
         </p>
       </li>
-      <li>
-        <p>
-          Total: <span>{total}</span>
+      <li className={css.statisticsItem}>
+        <p className={css.statisticsText}>
+          Total: <span className={css.statisticsVal}>{total}</span>
         </p>
       </li>
-      <li>
-        <p>
-          Positive feedback: <span>{positivePercentage}</span>
+      <li className={css.statisticsItem}>
+        <p className={css.statisticsText}>
+          Positive feedback:{' '}
+          <span className={css.statisticsVal}>{positivePercentage}%</span>
         </p>
       </li>
     </ul>

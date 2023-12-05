@@ -1,0 +1,23 @@
+.feedbackOptionsList {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    justify-content: center;
+    padding: 0;
+    margin-left: 0;
+}
+
+.feedbackOptionsBtn {
+    font-size: 18px;
+    background-color: rgb(168, 235, 235);
+    border-radius: 5px;
+    border: none;
+    width: 72px;
+    cursor: pointer;
+    
+}
+
+.feedbackOptionsBtn:hover,
+.feedbackOptionsBtn:focus {
+    background-color: blue;
+}
